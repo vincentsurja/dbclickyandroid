@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/points"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/totalPointsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_earned"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/totalPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/totalPointsTxt"
+            android:fontFamily="cursive"
+            android:text="0"
+            android:textColor="@color/progressGreen"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pointEqual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="cursive"
+            android:text="0"
+            android:layout_below="@+id/totalPoints"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/dialog_enter_points"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_field_height"
+            android:hint="@string/enter_points"
+            android:inputType="number"
+            android:textColor="@color/textColorSecondaryLight"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:drawableStart="@drawable/ic_action_medal"
+            android:drawablePadding="15dp"
+            android:paddingStart="15dp"
+            android:layout_below="@+id/pointEqual"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corners_edittext_light" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/add_points"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:layout_gravity="end"
+            android:background="@drawable/rounded_corners_button_accent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

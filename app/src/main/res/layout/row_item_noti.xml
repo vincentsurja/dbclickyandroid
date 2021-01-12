@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/main_card"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+    
+    <com.vectorcoder.androidwoocommerce.customs.CircularImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_action_notifications"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/noti_icon"
+        app:border_width="2dp"
+        app:border_overlay="true"
+        app:border_color="@color/bt_blue_pressed"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Heading"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/noti_icon"
+        android:id="@+id/noti_heading"
+        android:layout_toLeftOf="@+id/noti_time"
+        android:maxLines="1"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Heading"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/noti_desc"
+        android:layout_toRightOf="@+id/noti_icon"
+        android:layout_below="@+id/noti_heading"
+        android:layout_toLeftOf="@+id/noti_time"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Heading"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/noti_time"
+        android:textColor="@color/bt_error_red"
+        />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/product_custom_width"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/row_item_padding"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/new_in_image"
+        android:layout_width="@dimen/image_custom_width"
+        android:layout_height="@dimen/image_custom_height"
+        android:src="@drawable/placeholder"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/new_in_hoodies_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_heading"
+        android:layout_marginStart="@dimen/txt_custome_margin"
+        android:layout_below="@+id/new_in_image"/>
+
+    <TextView
+        android:id="@+id/new_in_price_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/txt_custome_margin"
+        android:layout_below="@+id/new_in_hoodies_txt"/>
+
+    <ToggleButton
+        android:id="@+id/product_like_btn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textOff=""
+        android:textOn=""
+        android:layout_marginStart="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/new_in_image"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/toggle_ic_favorite" />
+
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/windowBackground">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/category_fragment_home8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"/>
+
+            <FrameLayout
+                android:id="@+id/newest_fragment_home8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"/>
+
+            <FrameLayout
+                android:id="@+id/super_deals_fragment_home8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:gravity="center|start"
+                android:layout_marginStart="10dp"
+                android:id="@+id/layout_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_circle"
+                    android:id="@+id/productsTypeIcon"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:tint="@color/textColorSecondary" />
+
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@id/productsTypeIcon"
+                    android:id="@+id/products_horizontal_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/featured"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="@dimen/badge_text_size" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/view_all_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/layout_margin"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/view_all"
+                    android:textColor="@color/bt_text_blue"
+                    android:textSize="@dimen/text_heading"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/featured_fragment_home8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardBackgroundColor="@color/windowBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/support_btn_height"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_above="@+id/support_txt"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_action_support" />
+
+
+                        <TextView
+                            android:id="@+id/support_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Support: 24/7"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_heading" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/support_txt"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="Hotline: (+92) 3348860100"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/badge_text_size" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_above="@+id/safe_payment_txt"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_action_safe_payment" />
+
+
+                        <TextView
+                            android:id="@+id/safe_payment_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Safe Payment"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_heading" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/safe_payment_txt"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="Protect Online Payment"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/badge_text_size" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
